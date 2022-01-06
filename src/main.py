@@ -34,6 +34,8 @@ completion_time = {
 # ------------------+
 # Max Min Algorithm |
 # ------------------+
+# Select task ==> Maximum completion time
+# Assign machine ==> Minimum execution time
 
 # prepare task queue
 task_queue = []
