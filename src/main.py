@@ -62,8 +62,10 @@ while task_queue:
     # task "task_max_completion_time" assigned to machine "machine_min_task_execution_time"
     print(f"Task {selected_task} assigned to {selected_machine}")
 
+    # remove task from queue
     task_queue.remove(selected_task)
 
+    # update ready_time for machine
     ready_time[selected_machine] += execution_time[selected_task][selected_machine]
     print(f'Ready time for {selected_machine} updated to {ready_time[selected_machine]}')
     print(f"------")
