@@ -1,7 +1,7 @@
 Enhanced maxmin 
 https://www.ijaiem.org/Volume2Issue4/IJAIEM-2013-04-30-130.pdf
 
-# Revelations
+# TL;DR
     - Min Min algorithm
         - First MIN --> Find task Ti from task queue which has minimum execution time
         - Second MIN --> Find the machine Mj that will give minimum completion time for Ti
@@ -11,12 +11,16 @@ https://www.ijaiem.org/Volume2Issue4/IJAIEM-2013-04-30-130.pdf
         - Assign Ti to Mj
         - Remove Ti from tasks queue
         - Remove Mj from machines list
-    
-
 
 
 # Requirements
-    - Research paper: load balancing by maxmin algorithm in private cloud environment
+    - Research Paper: improved max min heuristic model for task scheduling in cloud
+        - Approach
+            - Implement MaxMin Algorithm
+            - Implement Improved MaxMinAlgorithm
+            - Use dummy data to share comparisons
+    
+    - Research Paper: load balancing by maxmin algorithm in private cloud environment
         - **prefer since has implemented only one algorithm
         - They have used maxmin algo, and plotted metrics using dummy values
         - Approach
@@ -50,4 +54,3 @@ for task in tasks:
     for machine in machines:
         # Compute ET(task, machine)
         et[task][machine] = mat[machine] + task.time
-
