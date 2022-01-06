@@ -1,0 +1,16 @@
+# Max Min Algorithm
+
+tasks:      List of tasks
+machines:   List of machines
+
+calculate ready_time for each machine
+
+while tasks:
+    # calculate completion time for each task with each machine
+    for task in tasks:
+        for machine in machines:
+            completion_time[task, machine] = execution_time[task][machine] + ready_time[machine]
+
+    # task_k: the task with maximum completion time
+
+
